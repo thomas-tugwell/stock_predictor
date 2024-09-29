@@ -22,7 +22,7 @@ sentiment_analyzer = SentimentIntensityAnalyzer()
 
 # Define constants
 STOCK_API_KEY = '0t4UjjffphgMLQ9dXEC_djp0q14RHLwY'
-NEWS_API_KEY = 'ac5fcb90ca724abc90ba3ddad07c451b'
+NEWS_API_KEY = 'ac5fcb90ca724abc90ba3ddad07c451b' 
 STOCK_SYMBOL = 'AAPL'  # Example: Apple Inc.
 DATE_FORMAT = '%Y-%m-%d'
 query = 'apple'
@@ -62,9 +62,11 @@ def fetch_stock_prices(symbol, start_date, end_date):
 
     return pd.DataFrame(prices)
 
-# Function to fetch news articles and calculate sentiment
+
+
 NEWS_DATA_FILE = 'news_data.json'  # File to store fetched news data
 
+#TODO: update with NewsCatcher API
 # Function to fetch and calculate news sentiment with improved storage and caching
 def fetch_news_sentiment(query, from_date, to_date):
     # Load existing data from file if available
