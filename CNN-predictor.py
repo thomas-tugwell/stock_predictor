@@ -21,8 +21,8 @@ nltk.download('vader_lexicon')
 sentiment_analyzer = SentimentIntensityAnalyzer()
 
 # Define constants
-STOCK_API_KEY = '0t4UjjffphgMLQ9dXEC_djp0q14RHLwY'
-NEWS_API_KEY = 'ac5fcb90ca724abc90ba3ddad07c451b' 
+STOCK_API_KEY = 'your_key'
+NEWS_API_KEY = 'your_key' 
 STOCK_SYMBOL = 'AAPL'  # Example: Apple Inc.
 DATE_FORMAT = '%Y-%m-%d'
 query = 'apple'
